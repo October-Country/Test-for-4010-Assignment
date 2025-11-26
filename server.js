@@ -66,7 +66,7 @@ function validateNumbers(req, res, next) {
 app.use('/api/add', validateNumbers);
 
 app.get('/', (req, res) => {
-    res.render('Homepage', );
+    res.render('index', );
 });
 
 
@@ -82,4 +82,5 @@ app.get('/api/add', (req, res) => {
 server.listen(3000, () => {
     console.log('Server running on http://localhost:3000');
 });
+
 
